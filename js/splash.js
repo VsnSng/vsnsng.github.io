@@ -152,8 +152,6 @@ function tsignbtn(){
 	var em = document.getElementById("email").value;
 	var pas = document.getElementById("password").value;
 
-	// var nm="Visha", em="a@a.com", pas="password"
-
 	firebase.auth().createUserWithEmailAndPassword(em, pas)
 	.then(function(k){
 		k.updateProfile({ displayName: nm, photoURL: "https://exam" });
